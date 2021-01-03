@@ -1,0 +1,29 @@
+.post--card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  width: 100%;
+
+  section:first-child {
+    margin-top: -20px;
+
+    p:last-child {
+      font-size: 12px;
+    }
+  }
+
+  img {
+    height: 100px;
+    width: 150px;
+    box-sizing: border-box;
+    object-fit: cover;
+  }
+
+  p {
+    max-width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

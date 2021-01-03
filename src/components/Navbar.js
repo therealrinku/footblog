@@ -1,10 +1,10 @@
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <ul>
         <p>footblog</p>
       </ul>
-    </div>
+    </nav>
   );
 };
 
