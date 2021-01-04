@@ -1,36 +1,7 @@
 .homepage {
-  .homepage--section-one {
-    width: 100%;
-    min-height: 100vh;
-    object-fit: cover;
-    background: url("../assets/soccer.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 85%;
+  margin: 10px auto;
+  font-family: Play;
 
-    button {
-      border: solid 1px rgba(0, 0, 0, 0.4);
-      padding: 15px 30px;
-      background: inherit;
-      font-size: 20px;
-    }
-
-    button:hover {
-      cursor: pointer;
-    }
-
-    a {
-      text-decoration: none;
-      color: white;
-    }
-
-    p {
-      font-size: 40px;
-      text-align: center;
-      color: white;
-    }
-  }
+  border: solid 1px rgba(0, 0, 0, 0.5);
 }

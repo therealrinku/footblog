@@ -10,7 +10,6 @@ const PostCard = ({
     <div className="post--card">
       <section>
         <a href="">{blogTitle}</a>
-        <p>{blogDescription}</p>
         <p>{blogPostedDate}</p>
       </section>
 

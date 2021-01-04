@@ -1,11 +1,11 @@
 .post--card {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 40px;
   width: 100%;
 
   section:first-child {
-    margin-top: -20px;
     width: inherit;
     display: flex;
     flex-direction: column;

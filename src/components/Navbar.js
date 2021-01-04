@@ -1,11 +1,16 @@
+import { RiSearchLine } from "react-icons/all";
+
 const Navbar = () => {
   return (
-    <nav
-      className="navbar"
-      style={{ fontSize: "22px", color: "white", position: " absolute" }}
-    >
+    <nav className="navbar">
       <ul>
-        <p>footblog</p>
+        <a href="/">simpliciti</a>
+      </ul>
+
+      <ul>
+        <button>
+          <RiSearchLine />
+        </button>
       </ul>
     </nav>
   );
