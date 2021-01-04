@@ -9,7 +9,7 @@ const PostCard = ({
   return (
     <div className="post--card">
       <section>
-        <h4>{blogTitle}</h4>
+        <a href="">{blogTitle}</a>
         <p>{blogDescription}</p>
         <p>{blogPostedDate}</p>
       </section>
