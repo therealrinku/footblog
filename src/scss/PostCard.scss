@@ -1,25 +1,12 @@
 .post--card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 40px;
+  margin: 20px auto;
+  border: solid 1px rgba(0, 0, 0, 0.5);
+  padding: 10px;
   width: 100%;
+  height: inherit;
 
-  section:first-child {
-    width: inherit;
-    display: flex;
-    flex-direction: column;
-
-    p:last-child {
-      font-size: 12px;
-    }
-  }
-
-  img {
-    height: 100px;
-    width: 150px;
-    box-sizing: border-box;
-    object-fit: cover;
+  h4 {
+    font-size: 22px;
   }
 
   a {
