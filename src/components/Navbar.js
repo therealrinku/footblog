@@ -1,10 +1,11 @@
 import { RiSearchLine } from "react-icons/all";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <ul>
-        <a href="/">lessismore</a>
+        <Link to="/">lessismore</Link>
       </ul>
 
       <ul>
