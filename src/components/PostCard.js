@@ -11,7 +11,7 @@ const PostCard = ({
   return (
     <div className="post--card">
       <section>
-        <a href="">{blogTitle}</a>
+        <p>{blogTitle}</p>
         <p>{blogDescription}</p>
         <p>{blogPostedDate}</p>
         <button onClick={() => history.push("/details")}>Read More</button>
