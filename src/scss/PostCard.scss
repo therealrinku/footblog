@@ -1,9 +1,9 @@
 .post--card {
   margin: 20px auto;
-  border: solid 1px rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  width: 100%;
+  width: inherit;
   height: inherit;
+  display: flex;
+  justify-content: space-between;
 
   h4 {
     font-size: 22px;
@@ -13,5 +13,20 @@
     color: black;
     text-decoration: none;
     font-weight: bold;
+  }
+
+  img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  button {
+    border: none;
+    background: #3d3f44;
+    border-radius: 5px;
+    padding: 7px 10px;
+    color: white;
+    font-size: 12px;
   }
 }

@@ -8,9 +8,16 @@ const PostCard = ({
 }) => {
   return (
     <div className="post--card">
-      <a href="">{blogTitle}</a>
-      <p>{blogDescription}</p>
-      <p>{blogPostedDate}</p>
+      <section>
+        <a href="">{blogTitle}</a>
+        <p>{blogDescription}</p>
+        <p>{blogPostedDate}</p>
+        <button>Read More</button>
+      </section>
+
+      <section>
+        <img src={blogImage} alt="img" />
+      </section>
     </div>
   );
 };
