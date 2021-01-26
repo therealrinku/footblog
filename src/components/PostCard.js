@@ -1,4 +1,4 @@
-import React from "react";
+import { useHistory } from "react-router-dom";
 
 const PostCard = ({
   blogTitle,
@@ -6,13 +6,15 @@ const PostCard = ({
   blogPostedDate,
   blogImage,
 }) => {
+  const history = useHistory();
+
   return (
     <div className="post--card">
       <section>
         <a href="">{blogTitle}</a>
         <p>{blogDescription}</p>
         <p>{blogPostedDate}</p>
-        <button>Read More</button>
+        <button onClick={() => history.push("/details")}>Read More</button>
       </section>
 
       <section>
