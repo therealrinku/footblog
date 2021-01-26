@@ -51,32 +51,26 @@ const Homepage = () => {
     <div className="homepage">
       <Navbar />
       {posts.map}
-      <section className="posts">
-        <section className="featured">
-          <PostCard
-            blogDescription="Lorem ipsum dolor sit amet, consectetur
+      <PostCard
+        blogDescription="Lorem ipsum dolor sit amet, consectetur
              adipiscing elit."
-            blogImage={posts[0].blogImage}
-            blogTitle={posts[0].blogTitle}
-            blogPostedDate={posts[0].blogPostedDate}
-          />
-        </section>
+        blogImage={posts[0].blogImage}
+        blogTitle={posts[0].blogTitle}
+        blogPostedDate={posts[0].blogPostedDate}
+      />
 
-        <section className="featured--side">
-          <PostCard
-            blogDescription={posts[1].blogDescription}
-            blogImage={posts[1].blogImage}
-            blogTitle={posts[1].blogTitle}
-            blogPostedDate={posts[1].blogPostedDate}
-          />
-          <PostCard
-            blogDescription={posts[2].blogDescription}
-            blogImage={posts[2].blogImage}
-            blogTitle={posts[2].blogTitle}
-            blogPostedDate={posts[2].blogPostedDate}
-          />
-        </section>
-      </section>
+      <PostCard
+        blogDescription={posts[1].blogDescription}
+        blogImage={posts[1].blogImage}
+        blogTitle={posts[1].blogTitle}
+        blogPostedDate={posts[1].blogPostedDate}
+      />
+      <PostCard
+        blogDescription={posts[2].blogDescription}
+        blogImage={posts[2].blogImage}
+        blogTitle={posts[2].blogTitle}
+        blogPostedDate={posts[2].blogPostedDate}
+      />
     </div>
   );
 };
