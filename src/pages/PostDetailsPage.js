@@ -5,7 +5,10 @@ const PostDetailsPage = () => {
   return (
     <div className="post--details-page">
       <Navbar />
-      <img src="https://bit.ly/3ccRudU" alt="test" />
+
+      <section>
+        <img src="https://bit.ly/3ccRudU" alt="test" />
+      </section>
     </div>
   );
 };
