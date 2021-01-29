@@ -4,7 +4,13 @@ const blogs = [
     blogTitle: "Tuchel announced as new Chelsea boss.",
     blogShortDescription:
       "Thomas Tuchel , the former PSG man has been appointed new Chelsea Manager.",
-    blogDescription: ``,
+    blogDescription: `
+    Thomas Tuchel has been appointed as the new Chelsea Head Coach. 
+    He moves to Stamford Bridge following a two-and-a-half year spell at French champions Paris Saint-Germain, which came to an end last month.
+He will be the first German to manage Chelsea and arrives having guided PSG to four major honours and the Champions League final during his time in the French capital.
+Prior to that, he spent seven seasons coaching in the Bundesliga, first with Mainz, where he led them into the Europa League, 
+and then a successful period with Borussia Dortmund where he won the German Cup.
+At Chelsea, he will be reunited with Christian Pulisic and Thiago Silva who he coached during his spells in Dortmund and Paris respectively.`,
     blogDate: "24 Jan 2021",
     blogImage: "https://bit.ly/3ooFt7D",
   },
