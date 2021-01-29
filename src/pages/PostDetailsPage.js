@@ -12,21 +12,29 @@ const PostDetailsPage = ({ match }) => {
       <Navbar />
 
       <main>
-        <section>
-          <div>
-            <h4>{blogPost.blogTitle}</h4>
-            <p>{blogPost.blogDate}</p>
-            <img src={blogPost.blogImage} alt="test" className="post--image" />
-          </div>
+        {blogPost.length !== 0 ? (
+          <section>
+            <div>
+              <h4>{blogPost.blogTitle}</h4>
+              <p>{blogPost.blogDate}</p>
+              <img
+                src={blogPost.blogImage}
+                alt="test"
+                className="post--image"
+              />
+            </div>
 
-          {blogPost.blogDescription.map((description, i) => {
-            return (
-              <p key={i} className="description">
-                {blogPost.blogDescription[i]}
-              </p>
-            );
-          })}
-        </section>
+            {blogPost.blogDescription.map((description, i) => {
+              return (
+                <p key={i} className="description">
+                  {blogPost.blogDescription[i]}
+                </p>
+              );
+            })}
+          </section>
+        ) : (
+          <p>This blog post is not available. Checkout other blog posts.</p>
+        )}
 
         <section>
           {blogs
