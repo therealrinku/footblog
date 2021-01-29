@@ -19,11 +19,16 @@ const PostDetailsPage = ({ match }) => {
             <img src={blogPost.blogImage} alt="test" className="post--image" />
           </div>
 
-          <p className="description">{blogPost.blogDescription}</p>
+          {blogPost.blogDescription.map((description, i) => {
+            return (
+              <p key={i} className="description">
+                {blogPost.blogDescription[i]}
+              </p>
+            );
+          })}
         </section>
 
         <section>
-          <h4>More Posts</h4>
           {blogs
             .filter((post) => post.id !== match.params.post_id)
             .map((post, i) => {
