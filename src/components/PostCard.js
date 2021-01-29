@@ -5,6 +5,7 @@ const PostCard = ({
   blogDescription,
   blogPostedDate,
   blogImage,
+  blogId,
 }) => {
   const history = useHistory();
 
@@ -14,7 +15,9 @@ const PostCard = ({
         <p>{blogTitle}</p>
         <p>{blogDescription}</p>
         <p>{blogPostedDate}</p>
-        <button onClick={() => history.push("/details")}>Read More</button>
+        <button onClick={() => history.push(`/details/${blogId}`)}>
+          Read More
+        </button>
       </section>
 
       <section>

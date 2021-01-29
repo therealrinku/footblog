@@ -14,6 +14,7 @@ const Homepage = () => {
             blogImage={post.blogImage}
             blogTitle={post.blogTitle}
             blogPostedDate={post.blogDate}
+            blogId={post.id}
           />
         );
       })}
