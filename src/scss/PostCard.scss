@@ -36,3 +36,11 @@
     color: rgba(0, 0, 0, 0.6);
   }
 }
+
+@media (max-width: 550px) {
+  .post--card {
+    img {
+      display: none;
+    }
+  }
+}
