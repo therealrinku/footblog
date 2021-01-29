@@ -24,19 +24,21 @@ const PostDetailsPage = ({ match }) => {
 
         <section>
           <h4>More Posts</h4>
-          {blogs.map((post, i) => {
-            return (
-              <PostCard
-                hideImage={true}
-                key={i}
-                blogDescription={post.blogShortDescription}
-                blogImage={post.blogImage}
-                blogTitle={post.blogTitle}
-                blogPostedDate={post.blogDate}
-                blogId={post.id}
-              />
-            );
-          })}
+          {blogs
+            .filter((post) => post.id !== match.params.post_id)
+            .map((post, i) => {
+              return (
+                <PostCard
+                  hideImage={true}
+                  key={i}
+                  blogDescription={post.blogShortDescription}
+                  blogImage={post.blogImage}
+                  blogTitle={post.blogTitle}
+                  blogPostedDate={post.blogDate}
+                  blogId={post.id}
+                />
+              );
+            })}
         </section>
       </main>
     </div>
