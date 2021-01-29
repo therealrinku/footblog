@@ -6,7 +6,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Route path="/" exact component={Homepage} />
-      <Route path="/details" exact component={PostDetailsPage} />
+      <Route path="/post/:post_id" exact component={PostDetailsPage} />
     </BrowserRouter>
   );
 };
