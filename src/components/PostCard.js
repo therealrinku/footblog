@@ -6,6 +6,7 @@ const PostCard = ({
   blogPostedDate,
   blogImage,
   blogId,
+  hideImage
 }) => {
   const history = useHistory();
 
@@ -21,7 +22,7 @@ const PostCard = ({
       </section>
 
       <section>
-        <img src={blogImage} alt="img" />
+        <img style={hideImage?{display:"none"}:null} src={blogImage} alt="img" />
       </section>
     </div>
   );

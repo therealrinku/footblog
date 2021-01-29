@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import PostCard from "../components/PostCard";
 import blogs from "../data/blogs";
 
 const PostDetailsPage = ({ match }) => {
@@ -10,15 +11,34 @@ const PostDetailsPage = ({ match }) => {
     <div className="post--details-page">
       <Navbar />
 
-      <section>
-        <div>
-          <h4>{blogPost.blogTitle}</h4>
-          <p>{blogPost.blogDate}</p>
-          <img src={blogPost.blogImage} alt="test" />
-        </div>
+      <main>
+        <section>
+          <div>
+            <h4>{blogPost.blogTitle}</h4>
+            <p>{blogPost.blogDate}</p>
+            <img src={blogPost.blogImage} alt="test" className="post--image" />
+          </div>
 
-        <p>{blogPost.blogDescription}</p>
-      </section>
+          <p className="description">{blogPost.blogDescription}</p>
+        </section>
+
+        <section>
+          <h4>More Posts</h4>
+          {blogs.map((post, i) => {
+            return (
+              <PostCard
+                hideImage={true}
+                key={i}
+                blogDescription={post.blogShortDescription}
+                blogImage={post.blogImage}
+                blogTitle={post.blogTitle}
+                blogPostedDate={post.blogDate}
+                blogId={post.id}
+              />
+            );
+          })}
+        </section>
+      </main>
     </div>
   );
 };
