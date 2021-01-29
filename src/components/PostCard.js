@@ -15,7 +15,7 @@ const PostCard = ({
         <p>{blogTitle}</p>
         <p>{blogDescription}</p>
         <p>{blogPostedDate}</p>
-        <button onClick={() => history.push(`/details/${blogId}`)}>
+        <button onClick={() => history.push(`/post/${blogId}`)}>
           Read More
         </button>
       </section>
