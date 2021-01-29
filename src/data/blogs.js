@@ -54,3 +54,5 @@ const blogs = [
     blogImage: "https://bit.ly/3osD5MY",
   },
 ];
+
+export default blogs;
