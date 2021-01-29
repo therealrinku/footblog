@@ -45,7 +45,7 @@ const blogs = [
       "After difficult few weeks Reds have won convincingly at spurs.",
     blogDescription: [],
     blogDate: "27 Jan 2021",
-    blogImage: "https://bit.ly/39q5MpG",
+    blogImage: "https://bit.ly/2NLEthb",
   },
   {
     id: "ei3ri93fnvg",
@@ -54,7 +54,7 @@ const blogs = [
       "Red devils has missed an opportunity to move to top of the table after dissapointing home loss.",
     blogDescription: [],
     blogDate: "28 Jan 2021",
-    blogImage: "https://bit.ly/2YmrEfl",
+    blogImage: "https://bit.ly/2KXebHC",
   },
   {
     id: "eiri4rifkvv4",
@@ -63,7 +63,7 @@ const blogs = [
       "Leaders City are in 13 games winning streak at the moment.",
     blogDescription: [],
     blogDate: "28 Jan 2021",
-    blogImage: "https://bit.ly/3ahbNUT",
+    blogImage: "https://bit.ly/39xhwH7",
   },
   {
     id: "3wir93r93rfjmv",
@@ -72,7 +72,7 @@ const blogs = [
       "Pogba has refused to talk about contract situation at Mufc.",
     blogDescription: [],
     blogDate: "24 Jan 2021",
-    blogImage: "https://bit.ly/3ahGdWS",
+    blogImage: "https://bit.ly/3iUn4OS",
   },
   {
     id: "r4irifk384fg",
@@ -81,7 +81,7 @@ const blogs = [
       "Harry Kane came limping off in first half against Liverpool.",
     blogDescription: [],
     blogDate: "28 Jan 2021",
-    blogImage: "https://bit.ly/3osD5MY",
+    blogImage: "https://bit.ly/3iXtgWc",
   },
 ];
 
