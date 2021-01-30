@@ -36,7 +36,7 @@ const PostDetailsPage = ({ match }) => {
           <p>This blog post is not available. Checkout other blog posts.</p>
         )}
 
-        <section>
+        <section style={{ marginTop: "76px" }}>
           {blogs
             .filter((post) => post.id !== match.params.post_id)
             .map((post, i) => {
